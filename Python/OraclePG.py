@@ -19,5 +19,13 @@ def OraclePG(qc,ind):
     elif ind ==4:
         return F(qc),G(qc)
     
+def Hadamard(x):
+    h=np.multiply(x,np.abs(x))
+    h=np.multiply(r,h)
+    return h
+
 def F(qc):
-    f = 1/3*(np.)
+    x = q0+np.dot(B,qc)
+    h=Hadamard(x)
+    f = 1/3*np.vdot(x,h) + + np.vdot(pr,np.dot(Ar,x))
+    return f

@@ -29,7 +29,7 @@ def Step_Cauchy(Oracle,x,d,gradient_step):
   return cout_opt, pente_opt, alpha_opt
   
 def Oracle_Step(Oracle,x,d,alpha):
-  return Oracle(x+alpha*d)[0],d*Oracle(x+alpha*d)[1]
+  return Oracle(x+alpha*d)[0],np.vdt(d,Oracle(x+alpha*d)[1])
   
 def Gradient_F_Cauchy(Oracle, x0):
     

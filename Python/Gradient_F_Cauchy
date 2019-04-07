@@ -3,7 +3,7 @@
 import numpy as np
 
 from numpy.linalg import norm
-from time import process_time
+#from import process_time
 
 #############################################################################
 #                                                                           #
@@ -43,7 +43,7 @@ def Gradient_F_Cauchy(Oracle, x0):
     gradient_step_list = []
     critere_list = []
 
-    time_start = process_time()
+ #   time_start = process_time()
     
     x = x0
 

@@ -39,7 +39,7 @@ from Verification import Verification
 #                  from Gradient_V import Gradient_V
 #                  from Wolfe import Wolfe
 #
-from Oracle PG import OraclePG
+from OraclePG import OraclePG
 from Gradient_F import Gradient_F
 
 ##### Initialisation de l'algorithme

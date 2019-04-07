@@ -21,7 +21,7 @@ def Hadamard(x):
 def F(qc):
     x = q0+np.dot(B,qc)
     h=Hadamard(x)
-    f = 1/3*np.vdot(x,h) + + np.vdot(pr,np.dot(Ar,x))
+    f = (1/3.0)*np.vdot(x,h) + np.vdot(pr,np.dot(Ar,x))
     return f
 
 def G(qc):

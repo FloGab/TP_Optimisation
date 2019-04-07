@@ -78,7 +78,7 @@ def Gradient_F_Cauchy(Oracle, x0):
     critere_opt = critere
     gradient_opt = gradient
     x_opt = x
-    time_cpu = process_time() - time_start
+   # time_cpu = process_time() - time_start
     
     print()
     print('Iteration :', k)

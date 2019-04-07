@@ -11,13 +11,8 @@ import numpy as np
 from Structures_N import *
 
 
-def OraclePG(qc,ind):
-    if ind==2:
-        return F(qc)
-    elif ind==3:
-        return G(qc)
-    elif ind ==4:
-        return F(qc),G(qc)
+def OraclePG(qc):
+    return F(qc),G(qc)
     
 def Hadamard(x):
     h=r*x*abs(x)

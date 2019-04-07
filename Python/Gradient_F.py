@@ -27,7 +27,7 @@ def Gradient_F(Oracle, x0):
     gradient_step_list = []
     critere_list = []
 
-  #  time_start = process_time()
+ #   time_start = process_time()
     
     x = x0
 
@@ -59,11 +59,11 @@ def Gradient_F(Oracle, x0):
     critere_opt = critere
     gradient_opt = gradient
     x_opt = x
-   # time_cpu = process_time() - time_start
+  #  time_cpu = process_time() - time_start
     
     print()
     print('Iteration :', k)
-    print('Temps CPU :', time_cpu)
+   # print('Temps CPU :', time_cpu)
     print('Critere optimal :', critere_opt)
     print('Norme du gradient :', norm(gradient_opt))
     

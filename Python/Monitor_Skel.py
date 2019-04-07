@@ -41,6 +41,8 @@ from Verification import Verification
 #
 from OraclePG import OraclePG
 from Gradient_F import Gradient_F
+from Gradient_F_Cauchy import Gradient_F_Cauchy
+
 
 ##### Initialisation de l'algorithme
 
@@ -74,8 +76,8 @@ x0 = 0.1 * random.normal(size=n-md)
 #                  copt, gopt, xopt = Gradient_V(OraclePG, x0)
 #
 print()
-print("ALGORITHME DU GRADIENT A PAS FIXE")
-copt, gopt, xopt = Gradient_F(OraclePG, x0)
+print("ALGORITHME DU GRADIENT A PAS DE CAUCHY")
+copt, gopt, xopt = Gradient_F_Cauchy(OraclePG, x0)
 
 ##### Verification des resultats
 

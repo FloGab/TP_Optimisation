@@ -14,7 +14,7 @@ from numpy.linalg import norm
 #############################################################################
 
 from Visualg import Visualg
-from scipy import optimize
+from scipy import minimize
 
 def Step_Cauchy(Oracle,x,d,gradient_step):
   results = minimize(lambda alpha:Oracle_Step(Oracle,x,d,alpha)[0],gradient_step,jac=lambda alpha: Oracle_Step(Oracle,x,d,alpha)[1])

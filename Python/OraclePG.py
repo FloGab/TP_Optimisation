@@ -20,8 +20,7 @@ def OraclePG(qc,ind):
         return F(qc),G(qc)
     
 def Hadamard(x):
-    h=np.multiply(x,np.abs(x))
-    h=np.multiply(r,h)
+    h=r*x*abs(x)
     return h
 
 def F(qc):
@@ -29,3 +28,9 @@ def F(qc):
     h=Hadamard(x)
     f = 1/3*np.vdot(x,h) + + np.vdot(pr,np.dot(Ar,x))
     return f
+
+def G(qc):
+    x = q0+np.dot(B,qc)
+    h=Hadamard(x)
+    g=np.dot(np.transpose(B),h + np.dot(np.transpose(Ar), pr))
+    return g

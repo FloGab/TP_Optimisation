@@ -3,7 +3,7 @@
 import numpy as np
 
 from numpy.linalg import norm
-from time import process_time
+#from time import process_time
 
 #############################################################################
 #                                                                           #
@@ -27,7 +27,7 @@ def Gradient_F(Oracle, x0):
     gradient_step_list = []
     critere_list = []
 
-    time_start = process_time()
+  #  time_start = process_time()
     
     x = x0
 
@@ -59,7 +59,7 @@ def Gradient_F(Oracle, x0):
     critere_opt = critere
     gradient_opt = gradient
     x_opt = x
-    time_cpu = process_time() - time_start
+   # time_cpu = process_time() - time_start
     
     print()
     print('Iteration :', k)
